@@ -24,12 +24,15 @@ export default function App() {
           gl.toneMapping = THREE.Uncharted2ToneMapping
           gl.setClearColor(new THREE.Color('#020207'))
         }}>
-        <pointLight distance={100} intensity={4} color="white" />
+        <pointLight distance={100} intensity={15} color="red" />
         <Number mouse={mouse} />
         <Particles count={isMobile ? 5000 : 10000} mouse={mouse} />
         <Sparks count={20} mouse={mouse} colors={['#A2CCB6', '#FCEEB5', '#EE786E', '#e0feff', 'lightpink', 'lightblue']} />
         <Effects down={down} />
       </Canvas>
+      <div className="frame">
+        <p className="frame__title">Winner of the first Game Mayhem Tekken tournament:</p>
+      </div>
     </>
   )
 }
