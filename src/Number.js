@@ -4,7 +4,7 @@ import { useFrame, useThree } from 'react-three-fiber'
 import lerp from 'lerp'
 import Text from './Text'
 
-export default function Number({ mouse, hover }) {
+export default function Number({ mouse }) {
   const ref = useRef()
   const { size, viewport } = useThree()
   const aspect = size.width / viewport.width
@@ -18,9 +18,7 @@ export default function Number({ mouse, hover }) {
   return (
     <Suspense fallback={null}>
       <group ref={ref}>
-        <Text size={2} onPointerOver={() => hover(true)} onPointerOut={() => hover(false)}>
-          Atte
-        </Text>
+        <Text size={2}>Atte</Text>
       </group>
     </Suspense>
   )
