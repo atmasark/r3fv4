@@ -3,10 +3,10 @@ import React, { forwardRef, useMemo } from 'react'
 import { useLoader, useUpdate } from 'react-three-fiber'
 
 const Text = forwardRef(({ children, vAlign = 'center', hAlign = 'center', size = 1, color = '#000000', ...props }, ref) => {
-  const font = useLoader(THREE.FontLoader, '/bold.blob')
+  const font = useLoader(THREE.FontLoader, '/helvetiker_regular.typeface.json')
   const config = useMemo(() => ({ font, size: 40, height: 50 }), [font])
   const mesh = useUpdate(
-    self => {
+    (self) => {
       const size = new THREE.Vector3()
       self.geometry.computeBoundingBox()
       self.geometry.boundingBox.getSize(size)
