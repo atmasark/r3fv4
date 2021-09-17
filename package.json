@@ -4,6 +4,7 @@
   "description": "",
   "keywords": [],
   "main": "src/index.js",
+  "homepage" : "https://gamemayhem.fi",
   "dependencies": {
     "lerp": "1.0.3",
     "react": "16.12.0",
