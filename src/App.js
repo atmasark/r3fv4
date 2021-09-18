@@ -16,7 +16,7 @@ export default function App() {
     <>
       <Canvas
         pixelRatio={Math.min(2, isMobile ? window.devicePixelRatio : 1)}
-        camera={{ fov: 100, position: [0, 0, 30] }}
+        camera={{ fov: 100, position: [0, 0, 40] }}
         onMouseMove={onMouseMove}
         onMouseUp={() => set(false)}
         onMouseDown={() => set(true)}
@@ -31,7 +31,7 @@ export default function App() {
         <Effects down={down} />
       </Canvas>
       <div className="frame">
-        <p className="frame__title">Winner of the first Game Mayhem Tekken tournament:</p>
+        <p className="frame__title">Winner of the Game Mayhem Tekken tournament vol. 1: "Show no mercy"</p>
       </div>
     </>
   )
